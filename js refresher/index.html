@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        // let a = 30;
+        // a = 40 + 5;
+        // console.log(a);
+
+        function hello(){
+            console.log("Hello World");
+        }
+        let obja = {
+            r: 34,
+            m: 64,
+            func: function myfunc(number){
+                console.log("Number is: "+ number)
+            }
+        }
+
+        document.addEventListener("click",function click(){
+            console.log("clicked");
+            // alert("hello");
+            let conf = confirm("are you sure?")
+            console.log(conf)
+        })
+
+        let arr = [34, 21, 23];
+        console.log(this);
+        // function myfunc(number) {
+        //     console.log("The number is "+ this);
+        // }
+        let mobj = {
+            a: this,
+            myfunc : function (number){
+            console.log("The number is "+ this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        
+        setTimeout(()=>{
+            console.log("yay")
+        }, 3000);
+        console.log("mai neeche ka script hoon");
+    </script>
+</head>
+<body>
+    <h1>
+        I am learning JS
+    </h1>
+</body>
+</html>
